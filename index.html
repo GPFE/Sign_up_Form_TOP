@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="side_panel">
+            <img src="./images/halie-west-25xggax4bSA-unsplash.jpg" alt="dark forest">
+            <div class="logo_placeholder">
+                <img class="odin_logo" src="./images/odin-lined.png" alt="odin-lined">
+                <span class="odin_text">odin</span>
+            </div>
+            <span id="autor">Photo by Halie West</span>
+        </div>
+        <div class="content">
+            <div class="description">
+                <p>
+                    This is my first sign-up form. Thanks for viewing it.
+                </p>
+            </div>
+            <div class="form">
+                <form>
+                    <fieldset>
+                        <legend>Let's do this!</legend>
+                        <div class="ask_box">
+                            <label for="first_name">first name</label>
+                            <input id="first_name" name="first_name" type="text">
+                        </div>
+                        <div class="ask_box">
+                            <label for="last_name">last name</label>
+                            <input id="last_name" name="last_name" type="text">
+                        </div>
+                        <div class="ask_box">
+                            <label for="email">email</label>
+                            <input id="email" name="email" type="email">
+                        </div>
+                        <div class="ask_box">
+                            <label for="phone">phone number</label>
+                            <input id="phone" name="phone" type="tel">
+                        </div>
+                        <div class="ask_box">
+                            <label for="password">password</label>
+                            <input id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" name="password" type="password">
+                        </div>
+                        <div class="ask_box">
+                            <label for="password_confirm">confirm password</label>
+                            <input id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" name="password_confirm" type="password">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="controls">
+                <button type="submit">Create Account</button>
+                <div>
+                    <span>Already have an account?</span>
+                    <a id="login" href="./login.html">Log in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
